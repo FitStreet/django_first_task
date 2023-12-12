@@ -1,0 +1,16 @@
+from Author.models import Author
+Author.objects.create(name = 'Pushkin', born_on='1787-12-01', psevdonim = 'Kucher')
+Author.objects.create(name = 'Gogol', born_on='1776-10-11', psevdonim = 'Brodyaga')
+Author.objects.create(name = 'Palanik', born_on='1985-11-23', psevdonim = 'Sila')
+from Book.models import Book
+author1 = Author.objects.get(name = 'Pushkin') 
+author1
+Book.objects.create(title = 'Gold fish',created_at='1803-04-30',genre = 'skazka', author = author1)
+Book.objects.create(title = 'Dead souls',created_at='1888-04-30',genre = '
+poema', author = author2) 
+author2 = Author.objects.get(name = 'Gogol')
+Book.objects.create(title = 'Dead souls',created_at='1888-04-30',genre = '
+poema', author = author2)
+author3
+Book.objects.create(title = 'Fight Club',created_at='1987-02-04',genre ='b
+oevik', author = author3)
