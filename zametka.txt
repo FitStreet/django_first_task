@@ -6,8 +6,6 @@ from Book.models import Book
 author1 = Author.objects.get(name = 'Pushkin') 
 author1
 Book.objects.create(title = 'Gold fish',created_at='1803-04-30',genre = 'skazka', author = author1)
-Book.objects.create(title = 'Dead souls',created_at='1888-04-30',genre = '
-poema', author = author2) 
 author2 = Author.objects.get(name = 'Gogol')
 Book.objects.create(title = 'Dead souls',created_at='1888-04-30',genre = '
 poema', author = author2)
